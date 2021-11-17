@@ -1,4 +1,4 @@
-# Cameras
+# Full Screen and Resizing
 
   Topics Covered: <br> 
   :+1: :sparkles: :camel: :tada:
