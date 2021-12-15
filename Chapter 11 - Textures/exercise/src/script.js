@@ -61,7 +61,6 @@ colorTexture.generateMipmaps = false
 colorTexture.minFilter = THREE.NearestFilter
 colorTexture.magFilter = THREE.NearestFilter
 
-
 // Mip Mapping
 // Minification Filter
 
