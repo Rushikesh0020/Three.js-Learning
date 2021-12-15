@@ -5,7 +5,6 @@
 :rocket: :metal: :octocat: <br>
 
     - Textures 
-    
         1. const texture = new THREE.Texture(image)
         2. image.onload
         3. THREE.TextureLoader()
