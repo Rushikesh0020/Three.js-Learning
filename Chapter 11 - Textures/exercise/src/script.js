@@ -1,6 +1,90 @@
 import './style.css'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
+// import imageSource from './color.jpg'
+
+// console.log(imageSource)
+
+/**Textures
+ */
+// 2nd Method
+
+const loadingManager = new THREE.LoadingManager()
+
+loadingManager.onStart = () => {
+    console.log('onStart')
+}
+
+loadingManager.onLoaded = () => {
+    console.log('onLoaded')
+}
+
+loadingManager.onProgress = () => {
+    console.log('onProgress')
+}
+
+loadingManager.onError = () => {
+    console.log('onError')
+}
+
+
+const textureLoader = new THREE.TextureLoader(loadingManager)
+// const colorTexture = textureLoader.load('/textures/door/color.jpg')
+const colorTexture = textureLoader.load('/textures/minecraft.png')
+// const colorTexture = textureLoader.load('/textures/checkerboard-8x8.png')
+const alphaTexture = textureLoader.load('/textures/door/alpha.jpg')
+const normalTexture = textureLoader.load('/textures/door/normal.jpg')
+const ambientOcclusionTexture = textureLoader.load('/textures/door/ambientOcclusion.jpg')
+const metalnessTexture = textureLoader.load('/textures/door/metalness.jpg')
+const roughnessTexture = textureLoader.load('/textures/door/roughness.jpg')
+
+
+
+// colorTexture.repeat.x = 2
+// colorTexture.repeat.y = 3
+
+// colorTexture.wrapS = THREE.RepeatWrapping
+// colorTexture.wrapT = THREE.RepeatWrapping
+
+// // colorTexture.wrapS = THREE.MirroredRepeatWrapping
+// // colorTexture.wrapT = THREE.MirroredRepeatWrapping
+
+// colorTexture.offset.x = 0.5
+// colorTexture.offset.y = 0.5
+
+// colorTexture.rotation = 1
+// colorTexture.rotation = Math.PI / 4
+// colorTexture.center.x = 0.5
+// colorTexture.center.y = 0.5
+
+colorTexture.generateMipmaps = false
+colorTexture.minFilter = THREE.NearestFilter
+colorTexture.magFilter = THREE.NearestFilter
+
+
+// Mip Mapping
+// Minification Filter
+
+/**
+ * 
+ * It's always hard to find the perfect textures
+ * A good start would be to search on the web
+ *          1. polligon.com
+ *          2. 3dtextures.me
+ *          3. arrowway-textures.ch
+ */
+
+
+
+// 1st Method
+// const image = new Image()
+// const texture = new THREE.Texture(image)
+
+// image.onload = () => {
+//     texture.needsUpdate = true
+// }
+
+// image.src = '/textures/door/color.jpg'
 
 /**
  * Base
@@ -15,7 +99,7 @@ const scene = new THREE.Scene()
  * Object
  */
 const geometry = new THREE.BoxBufferGeometry(1, 1, 1)
-const material = new THREE.MeshBasicMaterial({ color: 0xff0000 })
+const material = new THREE.MeshBasicMaterial({ map: colorTexture   })
 const mesh = new THREE.Mesh(geometry, material)
 scene.add(mesh)
 
