@@ -38,6 +38,17 @@
      
 *Output Video*
 
+`Environment Map Texture`
+
+https://user-images.githubusercontent.com/63740798/147834487-fa84e52c-f2d0-4e13-bcf7-631601512464.mp4
+
+
+`MeshNormalMaterial with flatShading`
+
+
+https://user-images.githubusercontent.com/63740798/147834331-f45c0133-357d-495a-b58c-b0cf1f5f714e.mp4
+
+
 `MeshBasicMaterial with wireframe`
 
 https://user-images.githubusercontent.com/63740798/147834246-448937c9-d7c3-491c-8b73-c845622ffef5.mp4
@@ -53,20 +64,16 @@ https://user-images.githubusercontent.com/63740798/147834250-e120a238-e378-492a-
 https://user-images.githubusercontent.com/63740798/147834327-686001c3-7362-4e9a-8083-c22861a30385.mp4
 
 
-`MeshNormalMaterial with flatShading`
 
-
-https://user-images.githubusercontent.com/63740798/147834331-f45c0133-357d-495a-b58c-b0cf1f5f714e.mp4
 
 `MeshToonMaterial with gradientTexture + min and max filter`
 
 https://user-images.githubusercontent.com/63740798/147834345-639db391-d8b6-41d7-addd-26bf9f649e13.mp4
 
 
-`Desplacement Map and Normal Map`
+`Displacement Map and Normal Map`
 
 https://user-images.githubusercontent.com/63740798/147834492-6995b10c-c920-4500-8a58-69ee55adbb13.mp4
 
-`Environment Map Texture`
-https://user-images.githubusercontent.com/63740798/147834487-fa84e52c-f2d0-4e13-bcf7-631601512464.mp4
+
 
