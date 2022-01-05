@@ -1,6 +1,6 @@
 # 3D Text 
 
-  Topics Covered: <br> 
+ > Topics Covered: <br> 
   :+1: :sparkles: :camel: :tada:
 :rocket: :metal: :octocat: <br>
 
@@ -14,16 +14,23 @@
         7. textGeometry.center()
  
  
- `Resources`
-   - It's always hard to find the perfect matcaps
-     A good start would be to search on the web
-      1. [polligon.com](https://www.poliigon.com/)
+ >`Resources`
+1. [Matcaps](https://github.com/nidorx/matcaps)
+2. [TypeFace Font Resource](https://gero3.github.io/facetype.js/) 
+      
+  <br />
  
- 么 Live Demo🕵🏻📊🧩🔮⚽️🔥: https://three-d-text-ironside.netlify.app/ 
+ >么 Live Demo🕵🏻📊🧩🔮⚽️🔥: https://three-d-text-ironside.netlify.app/ 
 
- Refer: [Three.js TextGeometry Docs ](https://threejs.org/docs/#examples/en/geometries/TextGeometry)
-     
+>  Refer: [Three.js TextGeometry Docs ](https://threejs.org/docs/#examples/en/geometries/TextGeometry)
+ 
+ 
+  <br />
+  
 *Output Video*
 
-`TextBufferGeometry, TorusBufferGeometry with MeshMatcapMaterial to create some 3D Text`
+`TextBufferGeometry, TorusBufferGeometry with MeshMatcapMaterial to create some 3D Text` 
+
+
+https://user-images.githubusercontent.com/63740798/148276122-4e3b2812-b5f3-4a78-8885-145deb1bc2dd.mp4
 
