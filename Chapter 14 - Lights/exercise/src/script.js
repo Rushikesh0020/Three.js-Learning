@@ -2,17 +2,20 @@ import './style.css'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import * as dat from 'dat.gui'
+import { RectAreaLightHelper } from 'three/examples/jsm/helpers/RectAreaLightHelper.js'
 
 
 /**
- * Topics Discovered: 
+ * Topics Covered: 
  * 1. Ambient Light applies omnidirectional lightning 
  * 2. Directional Light
  * 3. Hemisphere Light
  * 4. Point Light
  * 5. Rect Area Light
  * 6. SpotLight and spotLight.target
- * 7. Helpers : a) hemisphereLightHelper
+ * 7. Helpers : a) hemisphereLightHelper b) pointLightHelper 
+ *              c) directionalLightHelper d) RectAreaLightHelper
+ *              e) spotLightHelper
  *         
  */
 
@@ -73,8 +76,21 @@ scene.add(directionalLightHelper)
 const pointLightHelper = new THREE.PointLightHelper(pointLight, 0.2)
 scene.add(pointLightHelper)
 
-const spotLightHelper = new THREE.SpotLightHelper(spotLight, 0.2)
+const spotLightHelper = new THREE.SpotLightHelper(spotLight)
 scene.add(spotLightHelper)
+
+window.requestAnimationFrame(()=> {
+    spotLightHelper.update()
+})
+
+const rectAreaLightHelper = new RectAreaLightHelper(rectAreaLight)
+scene.add(rectAreaLightHelper)
+
+window.requestAnimationFrame(()=> {
+    rectAreaLightHelper.position.copy(rectAreaLight.position)
+    rectAreaLightHelper.quaternion.copy(rectAreaLight.quaternion)
+    rectAreaLightHelper.update()
+})
 
 /**
  * Objects
