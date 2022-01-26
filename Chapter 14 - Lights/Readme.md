@@ -5,14 +5,13 @@
 :rocket: :metal: :octocat: <br>
 
     - Lights 
-        1. How to get TypeFace Font: https://gero3.github.io/facetype.js/
-        2. Ambient Light applies omnidirectional lightning 
-        3. Directional Light
-        4. Hemisphere Light
-        5. Point Light
-        6. Rect Area Light
-        7. SpotLight and spotLight.target
-        8. Helpers : a) hemisphereLightHelper b) pointLightHelper 
+        1. Ambient Light applies omnidirectional lightning 
+        2. Directional Light
+        3. Hemisphere Light
+        4. Point Light
+        5. Rect Area Light
+        6. SpotLight and spotLight.target
+        7. Helpers : a) hemisphereLightHelper b) pointLightHelper 
                      c) directionalLightHelper d) RectAreaLightHelper
                      e) spotLightHelper
       
@@ -25,6 +24,13 @@
   <br />
   
 *Output Video*
+
+
+https://user-images.githubusercontent.com/63740798/151228292-76f6ea64-43d3-4cf0-b8a8-eb7eac42a047.mp4
+
+<hr />
+
+https://user-images.githubusercontent.com/63740798/151228305-2cb3759f-18d2-482f-abb8-5adc33cb2ff4.mp4
 
 
 
